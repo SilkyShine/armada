@@ -63,7 +63,14 @@ dnf5 -y install --setopt=install_weak_deps=False \
     binutils \
     btop \
     tailscale \
-    cryptsetup
+    cryptsetup \
+    screen \
+    just \
+    pigz \
+    systemd-container \
+    buildah \
+    wireguard-tools \
+    f2fs-tools
 
 curl --connect-timeout 30 --max-time 120 --retry 3 -fsSL \
     -o /etc/yum.repos.d/negativo17-fedora-multimedia.repo \
