@@ -20,6 +20,7 @@ dracut \
     --add armada-ostree-fallback \
     --add armada-unl0kr \
     --add crypt \
+    --omit-drivers 'qcom_q6v5_pas|qcom_q6v5' \
     "${IMG}" "${KVER}"
 
 # dracut drops modules silently: fail the build rather than ship without.
